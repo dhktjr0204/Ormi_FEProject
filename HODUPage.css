@@ -1,0 +1,292 @@
+/*css 전제적용*/
+.txt-hide{
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    overflow: hidden;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+p,h1{
+    margin: 0;
+}
+main, footer{
+    width:1400px;
+}
+header{
+    width: 100%;
+    background-color: #F2E9D8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color: #D97652;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 40px;
+    height: 50px;
+}
+/*css 전체적용*/
+/*헤더*/
+/*배너*/
+.banner, .contDownloadInfo{
+    width:1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner{
+    height: 102px;
+}
+.hoduLogo{
+    width: 130px;
+    height: 40px;
+}
+.bannerNav, .navList{
+    display: flex;
+    gap: 30px;
+}
+.downloadInfo{
+    margin-right: 170px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+/*다운로드 소개*/
+.downloadInfo h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.downloadInfo p{
+    width: 420px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.downloadButton{
+    width: 140px;
+}
+.boxCat{
+    width: 415px;
+    height: 890px;
+}
+
+/*메인*/
+/*호두소개*/
+.contHoduInfo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 80px 0 120px 0;
+}
+.hoduInfo{
+    margin-left:120px;
+    width: 510px;
+}
+.hoduInfo p{
+    font-weight: 400;
+    font-size: 16px;
+}
+.hoduInfo h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.hoduInfoImg{
+    width: 660px;
+    height: 390px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px  rgb(0,0,0,0.25);
+}
+
+/*고양이 사진 모음*/
+.contCatList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catListInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 88px;
+}
+.catListInfo h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #D97652;
+    margin-bottom: 40px;
+}
+.catListInfo p{
+    font-size: 16px;
+}
+.catListInfo p strong{
+    color: #D97652;
+}
+.catListImg{
+    display: flex;
+    flex-wrap: wrap;
+    gap:72px;
+}
+.catImg{
+    width: 378px;
+    height:378px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgb(0,0,0,0.25);
+}
+.showMore{
+    display: flex;
+    margin: 100px 0 80px 0;
+    flex-direction: column;
+    align-items: center;
+}
+.showMore p{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.showMoreButton{
+    width: 143px;
+}
+/*줄*/
+hr{
+    color: #C4C4C4;
+    margin-bottom: 68px;
+}
+/*맵*/
+.locationInfo{
+    margin-bottom: 48px;
+}
+.locationInfo h1{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.locationInfo p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #606367;
+}
+.map{
+    width: 1361px;
+    height: 572px;
+}
+
+/*구독 컴포넌트*/
+.contSubscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscribeComponent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 58px;
+    width: 1280px;
+    background-color: #263140;
+    border-radius: 30px;
+    color:white;
+    position: relative;
+    top:100px;
+    z-index: 1;
+}
+.subscribeInfo{
+    width: 471px;
+}
+.subscribeInfo h1{
+    font-weight: 700;
+    font-size: 36px;
+}
+.subscribeInfo p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.subscribeInput{
+    width: 530px;
+    height: 60px;
+    background-color: white;
+    border-radius: 60px;
+    padding: 5px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mailImg{
+    margin-left: 22px;
+}
+
+.subscribeInput>input{
+    width:100%;
+    font-size: 16px;
+    font-weight: 400;
+    color:#767676;
+    border: 0;
+    margin-left: 16px;
+}
+.subscribeButton{
+    width: 135px;
+}
+/*고양이 사진*/
+.catComponent{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.upToButton{
+    /*이미지 정가운데*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin: 19px 24px;
+    opacity: 80%;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    position: absolute;
+}
+/*아래 고양이사진 div에서 가운데 배치*/
+.contUnderCatImg{
+    height:340px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.underCatImg{
+    opacity: 90%;
+}
+/*푸터*/
+.apps{
+    display: flex;
+    gap:20px;
+}
+.circleButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: #F29D52;
+    border-radius: 50%;
+}
+.circleButton img{
+    width: 15px;
+    height: 19px;
+}
