@@ -100,8 +100,17 @@
         </div>
     </div>
 </footer>
-<script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?"></script>
+<script src="apiKey.js"></script>
+<script>
+    function loadScriptWithApiKey() {
+        const apiKey = config.apikey;
+        const script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=" + apiKey;
+        document.head.appendChild(script);
+    }
+    document.addEventListener('DOMContentLoaded', loadScriptWithApiKey);
+</script>
 <script>
     let address=document.querySelector(".myLocation");
     let mapContainer = document.getElementById('map'), // 지도를 표시할 divS
