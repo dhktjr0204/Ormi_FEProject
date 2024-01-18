@@ -11,6 +11,8 @@ subscribeButton.addEventListener('click',(event)=>{
         return;
     }
     modal.style.display='flex';
+    //모달창 뜨면 스크롤 막기
+    document.body.style.overflow='hidden';
 })
 
 let modalButton=document.querySelector('.modalButton');
