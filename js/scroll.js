@@ -21,7 +21,7 @@ async function fetchImages(pageNum) {
     }
 }
 
-//이미지 리스트 데이터화 +
+//이미지 리스트 데이터화
 function makeImageList(datas) {
     datas.forEach((items) => {
         catImgList.innerHTML += `<img src="${items.download_url}" alt="" class="catImg">`;
@@ -31,7 +31,7 @@ function makeImageList(datas) {
 // 무한 스크롤링
 function infinityScroll() {
     if (catImgList.scrollHeight - catImgList.scrollTop <= catImgList.clientHeight + 10) {
-        fetchImages(++pageToFetch);
+        fetchImages(pageToFetch+=1);
     }
 }
 
@@ -48,31 +48,34 @@ const throttling = (callback, delay) => {
     };
 };
 let showMoreButton = document.querySelector('.showMoreButton');
-let pageToFetch = 1;
+let pageToFetch = '';
 showMoreButton.addEventListener('click', () => {
     let text=document.querySelector(".showMore>p");
     if (showMoreButton.innerHTML === "Show more") {
+        //페이지 1로 초기화
+        pageToFetch=1;
         //ShowMore버튼 text가 Hide로 바뀐다.
         showMoreButton.innerHTML = "Hide";
         //버튼 위에 text가 사라진다
         text.style.display="none";
         //고양이 사진 모음 div의 높이가 커지고, scroll이 생긴다
         catImgList.style.height = '1200px';
-        catImgList.style.width='1400px';
+        catImgList.style.gap='50px';
         catImgList.style.overflowY = 'scroll';
         //이미지 가져오기
         fetchImages(pageToFetch);
-
-        catImgList.addEventListener('scroll',
-            //0.2초마다 infinityScroll을 실행한다.
-            throttling(infinityScroll, 100));
     }else{
         //고양이 사진 모음 설정 원상 복구
         showMoreButton.innerHTML = "Show more";
         text.style.display='';
         catImgList.style.height = '';
-        catImgList.style.width='';
+        catImgList.style.gap='72px';
         catImgList.style.overflowY = '';
+        //imgList 고양이 사진으로 초기화
         catImgList.innerHTML = initialImgList;
     }
-})
+});
+
+catImgList.addEventListener('scroll',
+    //0.2초마다 infinityScroll을 실행한다.
+    throttling(infinityScroll, 200));
