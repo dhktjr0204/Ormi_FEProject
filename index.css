@@ -24,7 +24,7 @@ p,h1{
     margin: 0;
 }
 main, footer{
-    width:1400px;
+    width:1280px;
 }
 header{
     width: 100%;
@@ -48,7 +48,7 @@ button:not(.map button), .downloadButton{
 /*헤더*/
 /*배너*/
 .banner, .contDownloadInfo{
-    width:1400px;
+    width:1280px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,9 +131,9 @@ button:not(.map button), .downloadButton{
 .contCatList, .catListInfo, .showMore{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .catListInfo{
-    align-items: center;
     margin-bottom: 88px;
 }
 .catListInfo h1{
@@ -163,7 +163,6 @@ button:not(.map button), .downloadButton{
 }
 .showMore{
     margin-top: 100px;
-    align-items: center;
     gap:28px;
 }
 .showMore p{
@@ -202,7 +201,7 @@ hr{
 .mapWrap{
     position:relative;
     overflow:hidden;
-    width:1400px;
+    width:1280px;
     height:520px;
     border-radius: 12px;
 }

@@ -58,8 +58,8 @@ showMoreButton.addEventListener('click', () => {
         text.style.display="none";
         //고양이 사진 모음 div의 높이가 커지고, scroll이 생긴다
         catImgList.style.height = '1200px';
+        catImgList.style.width='1400px';
         catImgList.style.overflowY = 'scroll';
-
         //이미지 가져오기
         fetchImages(pageToFetch);
 
@@ -71,6 +71,7 @@ showMoreButton.addEventListener('click', () => {
         showMoreButton.innerHTML = "Show more";
         text.style.display='';
         catImgList.style.height = '';
+        catImgList.style.width='';
         catImgList.style.overflowY = '';
         catImgList.innerHTML = initialImgList;
     }

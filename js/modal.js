@@ -1,7 +1,5 @@
 let subscribeButton = document.querySelector('.subscribeButton');
 let modal=document.querySelector('.contModal');
-//초기값 display:none으로 설정
-modal.style.display='none';
 
 subscribeButton.addEventListener('click',(event)=>{
     let email=document.querySelector('.subscribeInput> input').value;
