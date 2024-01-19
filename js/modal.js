@@ -22,6 +22,5 @@ function isEmail(email){
 
 let modalButton=document.querySelector('.modalButton');
 modalButton.addEventListener('click',()=>{
-    modal.style.display='none';
     location.reload();
 })
