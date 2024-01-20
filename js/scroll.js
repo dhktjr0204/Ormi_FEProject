@@ -59,18 +59,14 @@ showMoreButton.addEventListener('click', () => {
         //버튼 위에 text가 사라진다
         text.style.display="none";
         //고양이 사진 모음 div의 높이가 커지고, scroll이 생긴다
-        catImgList.style.height = '1200px';
-        catImgList.style.gap='50px';
-        catImgList.style.overflowY = 'scroll';
+        catImgList.className='moreCatImgList';
         //이미지 가져오기
         fetchImages(pageToFetch);
     }else{
         //고양이 사진 모음 설정 원상 복구
         showMoreButton.innerHTML = "Show more";
         text.style.display='';
-        catImgList.style.height = '';
-        catImgList.style.gap='72px';
-        catImgList.style.overflowY = '';
+        catImgList.className='catImgList';
         //imgList 고양이 사진으로 초기화
         catImgList.innerHTML = initialImgList;
     }
