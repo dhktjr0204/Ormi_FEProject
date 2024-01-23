@@ -1,14 +1,13 @@
 # HODU 렌딩 페이지 만들기
-이 프로젝트는 호두라는 이름의 고양이를 소개하는 페이지입니다.
+<p>이 프로젝트는 호두라는 이름의 고양이를 소개하는 페이지입니다.</p>
+
+[클릭하여 페이지를 방문하세요](https://dhktjr0204.github.io/Ormi_FEProject/)
 <br><br><br>
 ## 📚 기술스택
 <div align="center">
    
 ### Languages
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-
-### Collaboration Tool
-<img alt="Git" src ="https://img.shields.io/badge/Git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white"/>
 
 <br><br>
 
