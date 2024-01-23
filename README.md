@@ -15,18 +15,21 @@
 
 ## 🛠 구현 기능
 ### 1. 무한 스크롤
-<p>'showMore'를 클릭하면 호두 고양이의 사진을 무한대로 볼 수 있습니다.</p>
+<p>'showMore'를 클릭하면 사진을 무한대로 볼 수 있습니다.</p>
+<p>'Hide'를 클릭하면 원상태로 돌아갑니다.</p>
 <img src="/img/hodu_scroll.gif" alt="scrollImage">
 <br>
 
 ### 2. 현재 위치 표시
 <p>카카오맵 API 사용하여 현재위치를 표시합니다. 지도 위에 현재 위치의 법적 주소를 출력합니다.</p>
+<p>지도/ 스카이뷰 전환 기능으로 지도 타입을 컨트롤 할 수 있습니다.</p>
+<p>'+'와 '-'버튼으로 지도의 축소 확대를 컨트롤 할 수 있습니다.</p>
 <img src="/img/현재위치.png" alt="mapImage" style="width:70%;">
 <br>
 
 ### 3. 구독 모달창
-<p>이메일을 입력하고 subsribe버튼 클릭 시 모달창이 표시됩니다.</p>
-<p>Ok! I Love Hodu 버튼을 클릭하면 페이지가 새로고침됩니다.</p>
+<p>이메일을 입력하고 'subsribe' 클릭 시 모달창이 표시됩니다.</p>
+<p>'Ok! I Love Hodu'를 클릭하면 페이지가 새로고침됩니다.</p>
 <img src="/img/hodu_modal.gif" alt="modalImage" style="width:500px;">
 
 <br><br><br>
