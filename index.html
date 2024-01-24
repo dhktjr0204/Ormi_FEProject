@@ -7,36 +7,31 @@
 </head>
 <body>
 <header>
-    <section class="banner" id="banner">
-        <img src="img/hoduLogo.png" alt="호두 로고" class="hoduLogo">
+    <section class="box-header" id="banner">
+        <a href="#none"><img src="img/hoduLogo.png" alt="호두 로고" class="hoduLogo"></a>
         <nav class="bannerNav">
             <ul class="navList">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Support</a></li>
+                <li><a href="#none">Home</a></li>
+                <li><a href="#none">About</a></li>
+                <li><a href="#none">Support</a></li>
+                <li><a class="downloadButton" href="" download>Download</a></li>
             </ul>
-            <a class="downloadButton" href="" download>Download</a>
         </nav>
-    </section>
-    <section class="contDownloadInfo">
-        <div class="downloadInfo">
-            <h1>Lorem Ipsum is simply dummy text of the printing and</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown</p>
-            <a class="downloadButton" href="" download>Download</a>
-        </div>
-        <img src="img/botCat.png" alt="박스를 쓰고 있는 호두" class="boxCat">
+        <h1>Lorem Ipsum is simply<br> dummy text of the printing and</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+        <a class="downloadButton" href="" download>Download</a>
     </section>
 </header>
 <main>
-    <article class="contHoduInfo">
+    <section class="contHoduInfo">
         <img src="img/호두.png" alt="누워있는 호두" class="hoduInfoImg">
         <div class="hoduInfo">
             <h1>Lorem Ipsum is simply dummy text of the printing and dummy text</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
-    </article>
-    <article class="contCatList">
+    </section>
+    <section class="contCatList">
         <div class="catListInfo">
             <h1>dummy text of the printing and dummy</h1>
             <p>Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.</p>
@@ -47,9 +42,8 @@
             <p>Continue exploring HODU</p>
             <button class="showMoreButton">Show more</button>
         </div>
-    </article>
-    <hr>
-    <article class="contMap">
+    </section>
+    <section class="contMap">
         <div class="locationInfo">
             <h1>Where you'll be</h1>
             <p class="myAddress"></p>
@@ -66,7 +60,7 @@
                 </span>
             </div>
         </div>
-    </article>
+    </section>
     <article class="contSubscribe">
         <div class="subscribeComponent">
             <div class="subscribeInfo">
@@ -80,41 +74,38 @@
                 <button class="subscribeButton">Subscribe</button>
             </form>
         </div>
-        <div class="contUnderCatImg">
-            <img src="img/underCat.png" alt="위를 보고 있는 호두" class="underCatImg">
-        </div>
     </article>
     <a href="#banner" class="upToButton">
         <img src="img/upToscroll.png" alt="제일 위로 올리기">
     </a>
 </main>
 <footer>
-    <section class="banner">
-        <img src="img/hoduLogo.png" alt="호두 로고" class="hoduLogo">
-        <div class="apps">
-            <a href="" class="circleButton">
-                <img src="img/blog.png" alt="블로그">
-            </a>
-            <a href="" class="circleButton">
-                <img src="img/instagram.png" alt="인스타그램">
-            </a>
-            <a href="" class="circleButton">
-                <img src="img/facebook.png" alt="페이스북">
-            </a>
-            <a href="" class="circleButton">
-                <img src="img/youtube.png" alt="유튜브">
-            </a>
-        </div>
+    <section class="box-footer">
+        <a href="#none"><img src="img/hoduLogo.png" alt="호두 로고" class="hoduLogo"></a>
+        <ul class="apps">
+            <li>
+                <a href="#none" class="circleButton"><img src="img/blog.png" alt="블로그"></a>
+            </li>
+            <li>
+                <a href="#none" class="circleButton"><img src="img/instagram.png" alt="인스타그램"></a>
+            </li>
+            <li>
+                <a href="#none" class="circleButton"><img src="img/facebook.png" alt="페이스북"></a>
+            </li>
+            <li>
+                <a href="#none" class="circleButton"><img src="img/youtube.png" alt="유튜브"></a>
+            </li>
+        </ul>
     </section>
 </footer>
-<article class="contModal">
+<dialog class="contModal">
     <img src="img/modalCat.png" alt="호두 얼굴" class="modalCat">
     <h1>Thank you!</h1>
     <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
     <button class="modalButton">
         Ok! I Love HODU
     </button>
-</article>
+</dialog>
 <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0e74b0a3e014037b0fa6e471a0f0f2c9&libraries=services"></script>
 <script type="text/javascript" src="js/kakaoMap.js"></script>

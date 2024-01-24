@@ -11,7 +11,7 @@ subscribeButton.addEventListener('click',(event)=>{
         alert("이메일 형식에 맞게 입력해주세요");
         return;
     }
-    modal.style.display='flex';
+    modal.showModal();
     //모달창 뜨면 스크롤 막기
     document.body.style.overflow='hidden';
 })
